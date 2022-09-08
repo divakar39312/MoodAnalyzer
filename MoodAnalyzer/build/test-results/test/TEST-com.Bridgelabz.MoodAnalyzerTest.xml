@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.Bridgelabz.MoodAnalyzerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-08T04:00:51" hostname="DIVAKAR" time="0.24">
+  <properties/>
+  <testcase name="givenMessage_IsProper_ShouldReturnSad()" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.24"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
