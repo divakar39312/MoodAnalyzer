@@ -15,13 +15,25 @@ import org.junit.jupiter.api.Test;
 //}
 
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class MoodAnalyzerTest {
+
     @Test
-    public void givenMessage_IsProper_ShouldReturnSad() {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
-        String actualResult = moodAnalyzer.analyseMood("I am in any Mood");
-        Assertions.assertEquals("HAPPY", actualResult);
+        // Test case for return SAD if message contains sad
+    void messageSad_returnSad(){
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in sad mood");
+        String result = moodAnalyzer.analyzeMood();
+        System.out.println(result);
+        Assertions.assertEquals("SAD" , result);
     }
-
-
+    @Test
+        // Test case for Return Happy if message doesnot contain sad
+    void messageAnyThing_ReturnHappy(){
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in any mood");
+        String result = moodAnalyzer.analyzeMood();
+        System.out.println(result);
+        Assertions.assertEquals("HAPPY", result);
+    }
 }
